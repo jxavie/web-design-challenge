@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="body_setting">
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md bg_custom fixed-top">
+
+    <a class="navbar-brand" href="index.html">Latitude</a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      
+      <ul class="navbar-nav ml-auto active">
+
+        <!-- Dropdown for links to plots -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Plots
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+          </div>
+        </li>
+
+        <!-- Link to Comparison page -->
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+
+        <!-- Link to Data page -->
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </li>
+ 
+      </ul>
+    </div>
+    
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid" style="margin-top: 100px;">
+
+    <div class="row" style="margin-left: 20px; margin-right: 20px;">
+      
+      <div class="col-lg-8 col-md-12 pb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title pt-3 pb-2">
+              <strong>Max Temperature</strong>              
+            </h2>
+            <hr class="my-4">
+            <br>
+            <img src="visualizations/Fig1.png" class="img-fluid mx-auto d-block" alt="Fig1">
+            <br>
+            <br>
+            <p>
+              As shown in the figure above, temperature exhibits a non-monotonic
+              relationship with latitude.  Temperatures appear to be directly affected
+              by proximity to the equator.  The higher temperatures are, the closer 
+              latitude is to 0 degrees.
+
+              Note, however, that temperatures were observed to be lower in the northern
+              hemisphere than in the southern hemisphere.  At a latitude of 40 degrees, 
+              for example, temperatures hovered between 40 and 60 degrees fahrenheit. 
+              On the other hand, temperatures hovered between 60 and 80 degrees fahrenheit
+              at a latitude of -40 degrees.  This difference may be due to the earth's
+              tilt at the time of year when the temperature measurements were taken. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title pt-3">
+              <strong>Visualizations</strong>
+            </h3>
+            <hr class="my-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-6">
+                  <a href="temp.html">
+                    <img src="visualizations/Fig1.png" alt="Fig1" class="img-thumbnail fig_viz">
+                  </a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-6">
+                  <a href="humidity.html">
+                    <img src="visualizations/Fig2.png" alt="Fig2" class="fig_viz">
+                  </a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-6">
+                  <a href="cloudiness.html">
+                      <img src="visualizations/Fig3.png" alt="Fig3" class="fig_viz">
+                  </a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-6">
+                  <a href="wind.html">
+                      <img src="visualizations/Fig4.png" alt="Fig4" class="fig_viz">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br class="d-sm-block">
+
+  <footer class="footer bg-dark py-2 fixed-bottom d-sm-none d-none d-md-block">
+    <div class="container-fluid">
+      <div class="text-right small align-self-end">
+        Unit 11 HW - JNJ 12.07.19
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>

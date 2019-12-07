@@ -1,0 +1,127 @@
+
+.body_setting {
+  background-color: whitesmoke;
+}
+
+.card {
+  background-color: aliceblue;
+}
+
+.card-title {
+  color: rgb(92, 92, 92);
+}
+
+.card-body {
+  color: rgb(92, 92, 92);
+  font-size: 15pt;
+}
+
+.p {
+  line-height: 1.6;
+  font-family: calibri;
+  color: rgb(92, 92, 92);
+  text-align: left;
+  margin: 0;
+  font-size: 15pt;
+}
+
+.fig_sum {
+  float: left;
+  max-width: 50%;
+  height: auto;
+  shape-outside: image("assets/images/Fig1.png");
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.fig_viz {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fig_comp {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.img-thumbnail {
+  border-width: 2.5px;
+  border-color: lightsteelblue;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  /* margin-top: 0; */
+}
+
+.bg_custom {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  background-color: palegoldenrod;
+  color: steelblue;
+  font-weight: bolder;
+  font-size: x-large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: lightsteelblue;
+}
+
+.dropdown-menu {
+  background-color: lightslategray;
+}
+
+.dropdown-item {
+  color: palegoldenrod;
+}
+
+.footer {
+  color: lightsteelblue;
+}
+
+@media (max-width: 768px) {
+  .bg_custom {
+    background-color: palegoldenrod;
+  }
+
+  .navbar-brand {
+    color: steelblue;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='palegoldenrod' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .navbar-toggler {
+    background: steelblue;
+    border: steelblue;
+  }
+
+  .nav-link {
+    color: steelblue;
+  }
+}
